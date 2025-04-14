@@ -10,7 +10,7 @@ qemu_guest_agent_flags="-d -v -l /var/log/qemu-ga.log"
 #virtio_console_load="YES"
 EOF
 
-# Create a startup script with a delay
+# Create a delayed startup script
 cat > /usr/local/etc/rc.d/qemu-agent.sh <<EOF
 #!/bin/sh
 sleep 5
@@ -20,5 +20,5 @@ EOF
 # Make the script executable
 chmod +x /usr/local/etc/rc.d/qemu-agent.sh
 
-# Start the service now
+# Start the service immediately
 service qemu-guest-agent start
