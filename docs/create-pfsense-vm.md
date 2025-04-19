@@ -1,7 +1,7 @@
 
 # Creating a pfSense VM in Proxmox using UEFI boot
 
-This guide provides step-by-step instructions for setting up a pfSense virtual machine (VM) on a Proxmox VE server using UEFI boot. This will allow admin to interact (copy/paste) with the pfsense console directly from proxmox without having to SSH to the box. It covers VM creation, ISO mounting, initial boot configuration, and essential pfSense settings.
+This guide provides step-by-step instructions for setting up a pfSense virtual machine (VM) on a Proxmox VE server using UEFI boot. This will allow admin to interact (copy/paste) with the pfsense console directly from proxmox without having to SSH to the box. This KB strictly follows the [official Nategate documentation](https://docs.netgate.com/pfsense/en/latest/recipes/virtualize-proxmox-ve.html) and covers VM creation, ISO mounting, initial boot configuration, and essential pfSense settings.
 
 ---
 
