@@ -17,7 +17,7 @@ Before executing the commands, define the following values:
 
 ### 1.2 Create the VM with Basic Settings
 
-Adjust the value to suit your need, and then run the following command in the Proxmox shell to create the VM with optimized settings for pfSense:
+Adjust the values to suit your need, and then run the following command in the Proxmox shell to create the VM with optimized settings for pfSense:
 
 ```bash
 qm create <VM-ID> \
