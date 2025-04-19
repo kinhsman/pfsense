@@ -2,9 +2,9 @@
 
 ## Create VM:
    Edit the following values and then execute in Proxmox Shell:
-   `<VM-ID>` 
-   `<STORAGE-ID>`
-   `<VM-NAME>`
+   `<VM-ID>` - Example: `1000`
+   `<STORAGE-ID>` - Example: `local-zfs`
+   `<VM-NAME>` - Example: `pfsense`
    ```
    qm create <VM-ID> \
    --name <VM-NAME> \
