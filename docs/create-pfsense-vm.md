@@ -35,8 +35,8 @@ qm create <VM-ID> \
 ```
 
 **Explanation**:
-- `-agent 1`: Enables QEMU guest agent for better integration.
-- `-machine q35`: Uses a modern machine type for UEFI support.
+- `-agent 1`: Enables QEMU guest agent.
+- `-machine q35`: Uses this machine type for UEFI support.
 - `-bios ovmf`: Configures UEFI firmware.
 - `-cores 2`: Assigns 2 CPU cores.
 - `-memory 8192`: Allocates 8GB of RAM.
@@ -171,8 +171,6 @@ Hardware checksum offloading can cause issues with virtualized networking. Disab
    - Test internet connectivity from the LAN side.
 2. **Check Proxmox Console**:
    - Use the serial console (xterm.js) and make sure you can copy/paste
-3. **Backup Configuration**:
-   - In the pfSense GUI, go to **Diagnostics > Backup & Restore** and save the configuration.
 
 ---
 
@@ -189,5 +187,4 @@ Hardware checksum offloading can cause issues with virtualized networking. Disab
 
 - **pfSense Version**: This guide uses pfSense CE 2.7.2. Check for newer versions on the [pfSense website](https://atxfiles.netgate.com/mirror/downloads/).
 - **Security**: After setup, ensure the WAN interface is secured and GUI access is restricted.
-- **Proxmox Updates**: Keep Proxmox updated to avoid compatibility issues.
 
